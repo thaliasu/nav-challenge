@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Navigation Challenge</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/nav.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<nav aria-label="Main Navigation">
+		<div class="nav__container">
+			<a href="#"><img id="nav__logo" src="img/e11-logo-2.png" alt="Eleven 11 Logo"></a>
+			<button id="nav--mobile" type="button">
+				<i id="menu--open" class="material-icons md-light md-48">menu</i>
+				<i id="menu--close" class="material-icons md-light md-48">close</i>
+			</button>
+			<ul class="nav-link__container">
+				<li><a href="#">Our Work</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact</a></li>
+				<li ><a id="nav__quote" href="#">FREE QUOTE</a></li>
+			</ul>
+		</div>
+		<ul class="nav-link__container--hidden">
+			<li><a href="#">Our Work</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+			<li ><a id="nav__quote--mobile" href="#">FREE QUOTE</a></li>
+		</ul>
+	</nav>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+	<script>
+		$("#nav--mobile").click(function(){
+			$("nav").toggleClass( "active" );
+		});
+	</script>
+</body>
+</html>

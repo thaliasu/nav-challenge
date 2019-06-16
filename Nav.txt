@@ -1,0 +1,13 @@
+6/13- 1:36
+6/14- 0:24 + 1:04 + 1:07 + 0:51 + 0:45 + 0:50
+
+1. Make it accessible (use AXE extension)
+3. Troubleshoot small details:
+-How do I keep the <li> orange if clicked on?
+-nav quote text isn't aligned right or center
+-Animate...top down and hamburger to X transform
+
+$("#menu--open").css("display", "none"),
+$("#menu--close").css("display", "inline-block"),
+$("nav").css("height", "100vh"),
+$(".nav-link__container--hidden").css("display", "block");
